@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+}
+
+#gameContainer {
+    position: relative;
+    display: flex;
+    flex-direction: row; /* Ensure items are placed side by side */
+    align-items: flex-start;
+}
+
+canvas {
+    display: box;
+    flex-grow: 1;
+    border: 1px solid #fff;
+}
+
+#settingsContainer {
+    flex-grow: 0;
+    margin-top: 10px;
+    margin-left: 20px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    color: #fff;
+}
+
+#settingsContainer label {
+    margin-right: 5px;
+}
+
+#settingsContainer input[type="range"] {
+    width: 150px;
+}

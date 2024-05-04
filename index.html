@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Object Tracking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="gameContainer">
+        <canvas id="gameCanvas" width="800" height="800"></canvas>
+        <div id="settingsContainer">
+            <!-- All the sliders and controls -->
+            <label for="numTargets">Number of Targets:</label>
+            <input type="range" id="numTargets" min="1" max="15" value="4">
+            <span id="numTargetsValue">4</span>
+            <br>
+            <label for="numDistractors">Number of Distractors:</label>
+            <input type="range" id="numDistractors" min="1" max="30" value="8">
+            <span id="numDistractorsValue">8</span>
+            <br>
+            <label for="objectSpeed">Object Speed:</label>
+            <input type="range" id="objectSpeed" min="1" max="20" value="5">
+            <span id="objectSpeedValue">5</span>
+            <br>
+            <label for="velocityChange">Velocity Change:</label>
+            <input type="range" id="velocityChange" min="0" max="20" value="0">
+            <span id="velocityChangeValue">1</span>
+            <br>
+            <label for="ballSize">Ball Size:</label>
+            <input type="range" id="ballSize" min="5" max="30" value="10">
+            <span id="ballSizeValue">10</span>
+            <br>
+            <label for="wallSize">Wall Size:</label>
+            <input type="range" id="wallSize" min="400" max="1000" value="800">
+            <span id="wallSizeValue">800</span>
+            <br>
+            <p>Time since last highlight: <span id="timer">0</span> seconds</p>
+        </div>
+    </div>
+    
+
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
